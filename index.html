@@ -92,6 +92,17 @@ html{scroll-behavior:smooth}
 .pm-js .pm-card[data-reveal].pm-in:hover{transform:translateY(-4px);transition-delay:0ms}
 .pm-js .pm-row-link[data-reveal].pm-in,.pm-js .pm-tile[data-reveal].pm-in,.pm-js .pm-card[data-reveal].pm-in{transition:opacity 700ms cubic-bezier(0.22,1,0.36,1),transform 500ms cubic-bezier(0.22,1,0.36,1),background-color 180ms ease-out,color 180ms ease-out,border-color 200ms ease-out;transition-delay:var(--pm-d,0ms)}
 @media (max-width: 700px){.pm-portfolio .pm-navlink{display:none}}
+@media (max-width: 700px){
+.pm-portfolio .pm-navbar{flex-wrap:nowrap !important;padding:0 16px !important;gap:12px !important;min-height:64px !important}
+.pm-portfolio .pm-brand{min-width:0;gap:10px !important}
+.pm-portfolio .pm-brand > span:first-child{flex:0 0 auto}
+.pm-portfolio .pm-brand-name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:15px !important}
+.pm-portfolio .pm-mainnav{flex-wrap:nowrap !important;gap:8px !important;flex:0 0 auto}
+.pm-portfolio .pm-mainnav > a.pm-btn{min-height:40px !important;padding:0 14px !important;font-size:13px !important;white-space:nowrap}
+.pm-portfolio .pm-burger{width:40px !important;height:40px !important}
+.pm-portfolio .pm-burger span{left:11px !important}
+}
+@media (max-width: 340px){.pm-portfolio .pm-brand-name{display:none}}
 .pm-portfolio .pm-burger,.pm-portfolio .pm-menu,.pm-portfolio .pm-scrim{display:none}
 @media (max-width: 700px){
 .pm-portfolio .pm-mainnav{gap:10px !important}
@@ -145,10 +156,10 @@ html{scroll-behavior:auto}
 </style>
 <div class="pm-portfolio" style="font-family: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif; color: #0A0A0A; background: #0A0A0A; width: 100%; min-width: 0; -webkit-font-smoothing: antialiased">
 <header class="pm-nav" style="position: sticky; top: 0; z-index: 10; background: rgba(10,10,10,0.72); backdrop-filter: blur(20px) saturate(160%); -webkit-backdrop-filter: blur(20px) saturate(160%); border-bottom: 1px solid rgba(255,255,255,0.08)">
-<div style="max-width: 1240px; margin: 0 auto; padding: 0 24px; min-height: 72px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px">
-<a href="#pm-top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF">
+<div class="pm-navbar" style="max-width: 1240px; margin: 0 auto; padding: 0 24px; min-height: 72px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px">
+<a class="pm-brand" href="#pm-top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF">
 <span style="width: 36px; height: 36px; border-radius: 999px; background: #FFFFFF; color: #0A0A0A; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; letter-spacing: -0.02em">PM</span>
-<span style="font-weight: 600; font-size: 16px; letter-spacing: -0.01em">Pranab Mitra</span>
+<span class="pm-brand-name" style="font-weight: 600; font-size: 16px; letter-spacing: -0.01em">Pranab Mitra</span>
 </a>
 <nav class="pm-mainnav" aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px">
 <a class="pm-navlink" href="#services" style="color: #A3A3A3; text-decoration: none; font-size: 14px; font-weight: 500; padding: 12px 0">Services</a>
