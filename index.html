@@ -1,0 +1,985 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pranab Mitra · WordPress Developer &amp; SEO Strategist</title>
+<meta name="description" content="Pranab Mitra builds WordPress websites, handles maintenance and redesigns, and does SEO. Get a free website and SEO audit.">
+<meta property="og:title" content="Pranab Mitra · WordPress Developer &amp; SEO Strategist">
+<meta property="og:description" content="New WordPress websites, redesigns and maintenance, with SEO built in. Get a free website and SEO audit.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/pranab-mitra.jpg">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230A0A0A'/%3E%3Ctext x='32' y='41' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='%23fff' text-anchor='middle'%3EPM%3C/text%3E%3C/svg%3E">
+<style>html,body{margin:0;background:#0A0A0A}</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
+<style>
+.pm-portfolio,.pm-portfolio *{box-sizing:border-box}
+.pm-portfolio section{scroll-margin-top:72px}
+.pm-portfolio a{color:inherit;text-decoration:none;box-shadow:none}
+.pm-portfolio a:hover{color:inherit}
+.pm-portfolio h1,.pm-portfolio h2,.pm-portfolio h3,.pm-portfolio p,.pm-portfolio ul,.pm-portfolio ol,.pm-portfolio li,.pm-portfolio figure{font-family:inherit;text-transform:none}
+.pm-portfolio h1,.pm-portfolio h2,.pm-portfolio h3{color:inherit}
+.pm-portfolio img{max-width:100%;height:100%}
+.pm-portfolio li::before,.pm-portfolio li::marker{content:none}
+html{scroll-behavior:smooth}
+.pm-btn{transition:transform 120ms ease-out, background-color 160ms ease-out, color 160ms ease-out, border-color 160ms ease-out}
+.pm-btn:active{transform:scale(0.97)}
+.pm-btn-light:hover{background:#D4D4D4 !important}
+.pm-btn-ghost:hover{border-color:#FFFFFF !important}
+.pm-btn-dark:hover{background:#262626 !important}
+.pm-navlink{transition:color 160ms ease-out}
+.pm-navlink:hover{color:#FFFFFF !important}
+.pm-card{transition:transform 260ms cubic-bezier(0.2,0.8,0.2,1), border-color 200ms ease-out, background-color 200ms ease-out}
+.pm-card:hover{border-color:#0A0A0A !important;transform:translateY(-4px)}
+.pm-card:active{transform:translateY(-2px) scale(0.99)}
+.pm-card .pm-arrow{transition:transform 260ms cubic-bezier(0.2,0.8,0.2,1)}
+.pm-card:hover .pm-arrow{transform:translate(3px,-3px)}
+.pm-tile{transition:background-color 180ms ease-out, color 180ms ease-out}
+.pm-tile:hover{background:#0A0A0A !important;color:#FFFFFF !important}
+.pm-tile:hover .pm-tile-sub{color:#A3A3A3 !important}
+.pm-row-link{transition:background-color 180ms ease-out, padding 260ms cubic-bezier(0.2,0.8,0.2,1)}
+.pm-row-link:hover{background:#171717 !important}
+.pm-row-link .pm-arrow{transition:transform 260ms cubic-bezier(0.2,0.8,0.2,1)}
+.pm-row-link:hover .pm-arrow{transform:translate(3px,-3px)}
+.pm-portfolio a:focus-visible{outline:2px solid #FFFFFF;outline-offset:3px}
+.pm-on-light a:focus-visible, a.pm-on-light:focus-visible{outline-color:#0A0A0A}
+.pm-portfolio [hidden]{display:none !important}
+.pm-portfolio button{font-family:inherit;cursor:pointer;text-transform:none;letter-spacing:normal;box-shadow:none;line-height:1}
+.pm-portfolio .pm-field{display:flex;flex-direction:column;gap:8px}
+.pm-portfolio .pm-label{font-family:'Geist Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#A3A3A3;font-weight:400}
+.pm-portfolio .pm-input{width:100%;min-height:52px;margin:0;padding:14px 16px;background:#171717;border:1px solid #333333;border-radius:14px;color:#FFFFFF;font-family:inherit;font-size:16px;line-height:1.45;box-shadow:none;-webkit-appearance:none;appearance:none;transition:border-color 160ms ease-out,background-color 160ms ease-out,box-shadow 160ms ease-out}
+.pm-portfolio .pm-input::placeholder{color:#737373;opacity:1}
+.pm-portfolio .pm-input:hover{border-color:#525252}
+.pm-portfolio .pm-input:focus{outline:none;border-color:#FFFFFF;background:#1C1C1C;box-shadow:0 0 0 4px rgba(255,255,255,0.12)}
+.pm-portfolio textarea.pm-input{min-height:168px;resize:vertical}
+.pm-portfolio .pm-chip{position:relative;display:inline-flex;margin:0;cursor:pointer}
+.pm-portfolio .pm-chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0;pointer-events:none}
+.pm-portfolio .pm-chip span{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid #404040;border-radius:999px;font-size:15px;color:#D4D4D4;transition:background-color 160ms ease-out,color 160ms ease-out,border-color 160ms ease-out,transform 120ms ease-out}
+.pm-portfolio .pm-chip:hover span{border-color:#8A8A8A}
+.pm-portfolio .pm-chip span:active{transform:scale(0.97)}
+.pm-portfolio .pm-chip input:checked + span{background:#FFFFFF;color:#0A0A0A;border-color:#FFFFFF}
+.pm-portfolio .pm-chip input:focus-visible + span{outline:2px solid #FFFFFF;outline-offset:3px}
+.pm-portfolio [role="status"]:empty{display:none}
+.pm-portfolio .pm-submit[disabled]{opacity:0.6;cursor:progress}
+.pm-portfolio button:focus-visible{outline:2px solid #FFFFFF;outline-offset:3px}
+.pm-portfolio .pm-progress{position:absolute;left:0;right:0;bottom:-1px;height:2px;background:#FFFFFF;transform-origin:0 50%;transform:scaleX(0);will-change:transform}
+.pm-portfolio .pm-marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.pm-portfolio .pm-track{display:flex;width:max-content;animation:pm-marquee 45s linear infinite;will-change:transform}
+.pm-portfolio .pm-marquee:hover .pm-track{animation-play-state:paused}
+.pm-portfolio .pm-group{display:flex;align-items:center;gap:28px;padding-right:28px;font-family:'Geist Mono',ui-monospace,monospace;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;white-space:nowrap}
+@keyframes pm-marquee{to{transform:translate3d(-50%,0,0)}}
+.pm-portfolio .pm-pulse{position:relative;width:8px;height:8px;border-radius:999px;background:#FFFFFF;flex:0 0 auto;display:inline-block}
+.pm-portfolio .pm-pulse::after{content:"";position:absolute;inset:0;border-radius:inherit;background:inherit;animation:pm-pulse 2.2s cubic-bezier(0.2,0.8,0.2,1) infinite}
+.pm-portfolio .pm-pulse-dark{background:#0A0A0A}
+@keyframes pm-pulse{0%{transform:scale(1);opacity:0.6}80%,100%{transform:scale(3);opacity:0}}
+.pm-portfolio .pm-glow{position:absolute;width:620px;height:620px;right:-180px;top:-260px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,0.10),rgba(255,255,255,0));pointer-events:none;animation:pm-drift 14s ease-in-out infinite alternate}
+@keyframes pm-drift{to{transform:translate3d(-120px,90px,0) scale(1.15)}}
+.pm-portfolio .pm-tilt{will-change:transform;transform:perspective(900px)}
+.pm-portfolio .pm-float{position:fixed;right:20px;bottom:20px;z-index:50;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 22px;border-radius:999px;background:#FFFFFF;color:#0A0A0A !important;font-family:'Geist',system-ui,sans-serif;font-size:15px;font-weight:600;text-decoration:none;box-shadow:0 12px 40px rgba(0,0,0,0.35),0 0 0 1px rgba(0,0,0,0.08);opacity:0;transform:translateY(24px) scale(0.92);pointer-events:none;transition:opacity 300ms ease-out,transform 500ms cubic-bezier(0.34,1.36,0.64,1)}
+.pm-portfolio .pm-float.pm-show{opacity:1;transform:none;pointer-events:auto}
+.pm-portfolio .pm-float:active{transform:scale(0.96)}
+.pm-portfolio .pm-pop{animation:pm-pop 600ms cubic-bezier(0.34,1.56,0.64,1) both}
+@keyframes pm-pop{from{transform:scale(0.4);opacity:0}to{transform:none;opacity:1}}
+.pm-portfolio .pm-draw{stroke-dasharray:24;stroke-dashoffset:24;animation:pm-draw 450ms 250ms ease-out forwards}
+@keyframes pm-draw{to{stroke-dashoffset:0}}
+.pm-js [data-reveal]{opacity:0;transform:translate3d(0,28px,0);transition:opacity 700ms cubic-bezier(0.22,1,0.36,1),transform 900ms cubic-bezier(0.22,1,0.36,1);transition-delay:var(--pm-d,0ms)}
+.pm-js [data-reveal].pm-in{opacity:1;transform:none}
+.pm-js .pm-card[data-reveal].pm-in:hover{transform:translateY(-4px);transition-delay:0ms}
+.pm-js .pm-row-link[data-reveal].pm-in,.pm-js .pm-tile[data-reveal].pm-in,.pm-js .pm-card[data-reveal].pm-in{transition:opacity 700ms cubic-bezier(0.22,1,0.36,1),transform 500ms cubic-bezier(0.22,1,0.36,1),background-color 180ms ease-out,color 180ms ease-out,border-color 200ms ease-out;transition-delay:var(--pm-d,0ms)}
+@media (max-width: 700px){.pm-portfolio .pm-navlink{display:none}}
+.pm-portfolio .pm-burger,.pm-portfolio .pm-menu,.pm-portfolio .pm-scrim{display:none}
+@media (max-width: 700px){
+.pm-portfolio .pm-mainnav{gap:10px !important}
+.pm-portfolio .pm-burger{display:inline-flex;position:relative;width:44px;height:44px;padding:0;margin:0;border-radius:999px;border:1px solid #404040;background:transparent;color:#FFFFFF;align-items:center;justify-content:center;transition:background-color 160ms ease-out,border-color 160ms ease-out,transform 120ms ease-out}
+.pm-portfolio .pm-burger:active{transform:scale(0.94)}
+.pm-portfolio .pm-burger span{position:absolute;left:13px;width:18px;height:1.6px;border-radius:2px;background:currentColor;transition:transform 380ms cubic-bezier(0.32,1.25,0.5,1)}
+.pm-portfolio .pm-burger span:first-child{transform:translateY(-3.5px)}
+.pm-portfolio .pm-burger span:last-child{transform:translateY(3.5px)}
+.pm-portfolio.pm-menu-open .pm-burger{background:#FFFFFF;border-color:#FFFFFF;color:#0A0A0A}
+.pm-portfolio.pm-menu-open .pm-burger span:first-child{transform:rotate(45deg)}
+.pm-portfolio.pm-menu-open .pm-burger span:last-child{transform:rotate(-45deg)}
+.pm-portfolio .pm-scrim{display:block;position:fixed;z-index:9;left:0;right:0;bottom:0;top:var(--pm-hh,72px);background:rgba(0,0,0,0.55);opacity:0;visibility:hidden;transition:opacity 260ms ease-out,visibility 0s linear 260ms}
+.pm-portfolio .pm-menu{display:block;position:absolute;left:0;right:0;top:100%;max-height:calc(100vh - var(--pm-hh,72px));overflow-y:auto;overscroll-behavior:contain;padding:8px 24px 28px;background:#0A0A0A;border-bottom:1px solid #262626;box-shadow:0 30px 60px -20px rgba(0,0,0,0.7);transform-origin:50% 0;opacity:0;visibility:hidden;transform:translateY(-10px) scale(0.98);transition:opacity 220ms ease-out,transform 360ms cubic-bezier(0.22,1,0.36,1),visibility 0s linear 360ms}
+.pm-portfolio.pm-menu-open .pm-scrim{opacity:1;visibility:visible;transition-delay:0s}
+.pm-portfolio.pm-menu-open .pm-menu{opacity:1;visibility:visible;transform:none;transition-delay:0s}
+.pm-portfolio .pm-menu li{opacity:0;transform:translateY(-8px);transition:opacity 260ms ease-out,transform 420ms cubic-bezier(0.22,1,0.36,1)}
+.pm-portfolio.pm-menu-open .pm-menu li{opacity:1;transform:none}
+.pm-portfolio.pm-menu-open .pm-menu li:nth-child(1){transition-delay:40ms}
+.pm-portfolio.pm-menu-open .pm-menu li:nth-child(2){transition-delay:80ms}
+.pm-portfolio.pm-menu-open .pm-menu li:nth-child(3){transition-delay:120ms}
+.pm-portfolio.pm-menu-open .pm-menu li:nth-child(4){transition-delay:160ms}
+.pm-portfolio.pm-menu-open .pm-menu li:nth-child(5){transition-delay:200ms}
+.pm-portfolio .pm-menu-link{display:flex;align-items:baseline;gap:16px;min-height:60px;padding:16px 4px;border-bottom:1px solid #262626;color:#FFFFFF !important;text-decoration:none;font-size:28px;font-weight:600;letter-spacing:-0.025em;line-height:1.1;transition:padding 260ms cubic-bezier(0.22,1,0.36,1),color 160ms ease-out}
+.pm-portfolio .pm-menu-link:active{padding-left:10px;color:#BDBDBD !important}
+.pm-portfolio .pm-menu-foot{display:flex;flex-direction:column;gap:18px;padding-top:24px}
+.pm-portfolio .pm-menu-mini{display:inline-flex;align-items:center;min-height:44px;font-size:15px;color:#A3A3A3 !important;text-decoration:none}
+.pm-portfolio.pm-menu-open .pm-float{opacity:0 !important;pointer-events:none !important}
+}
+
+@media (max-width: 600px){.pm-portfolio .pm-float{left:16px;right:16px;bottom:16px;justify-content:center}}
+@media (hover: hover){.pm-portfolio .pm-shot img{filter:grayscale(1);transform:scale(1.001);transition:filter 500ms ease-out,transform 700ms cubic-bezier(0.22,1,0.36,1)}.pm-portfolio .pm-card:hover .pm-shot img{filter:none;transform:scale(1.03)}}
+@media (prefers-reduced-motion: reduce){
+html{scroll-behavior:auto}
+.pm-portfolio .pm-menu,.pm-portfolio .pm-menu li,.pm-portfolio .pm-burger span{transform:none !important}
+.pm-portfolio.pm-menu-open .pm-burger span:first-child{transform:rotate(45deg) !important}
+.pm-portfolio.pm-menu-open .pm-burger span:last-child{transform:rotate(-45deg) !important}
+.pm-portfolio .pm-burger span:first-child{transform:translateY(-3.5px) !important}
+.pm-portfolio .pm-burger span:last-child{transform:translateY(3.5px) !important}
+.pm-portfolio .pm-track,.pm-portfolio .pm-pulse::after,.pm-portfolio .pm-glow,.pm-portfolio .pm-pop,.pm-portfolio .pm-draw{animation:none !important}
+.pm-portfolio .pm-draw{stroke-dashoffset:0}
+.pm-portfolio .pm-marquee{-webkit-mask-image:none;mask-image:none}
+.pm-portfolio .pm-track{width:auto;flex-wrap:wrap;justify-content:center;padding:0 24px}
+.pm-portfolio .pm-group + .pm-group{display:none}
+.pm-portfolio .pm-group{flex-wrap:wrap;justify-content:center;white-space:normal;padding-right:0}
+.pm-js [data-reveal]{opacity:1;transform:none;transition:none}
+.pm-btn,.pm-card,.pm-card .pm-arrow,.pm-row-link,.pm-row-link .pm-arrow,.pm-tile,.pm-portfolio .pm-chip span,.pm-portfolio .pm-float{transition:background-color 150ms ease, color 150ms ease, border-color 150ms ease !important;transform:none !important}
+}
+@media (prefers-reduced-transparency: reduce){
+.pm-nav{background:#0A0A0A !important;backdrop-filter:none !important;-webkit-backdrop-filter:none !important}
+}
+</style>
+<div class="pm-portfolio" style="font-family: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif; color: #0A0A0A; background: #0A0A0A; width: 100%; min-width: 0; -webkit-font-smoothing: antialiased">
+<header class="pm-nav" style="position: sticky; top: 0; z-index: 10; background: rgba(10,10,10,0.72); backdrop-filter: blur(20px) saturate(160%); -webkit-backdrop-filter: blur(20px) saturate(160%); border-bottom: 1px solid rgba(255,255,255,0.08)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 0 24px; min-height: 72px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px">
+<a href="#pm-top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF">
+<span style="width: 36px; height: 36px; border-radius: 999px; background: #FFFFFF; color: #0A0A0A; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; letter-spacing: -0.02em">PM</span>
+<span style="font-weight: 600; font-size: 16px; letter-spacing: -0.01em">Pranab Mitra</span>
+</a>
+<nav class="pm-mainnav" aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 28px">
+<a class="pm-navlink" href="#services" style="color: #A3A3A3; text-decoration: none; font-size: 14px; font-weight: 500; padding: 12px 0">Services</a>
+<a class="pm-navlink" href="#work" style="color: #A3A3A3; text-decoration: none; font-size: 14px; font-weight: 500; padding: 12px 0">Work</a>
+<a class="pm-navlink" href="#process" style="color: #A3A3A3; text-decoration: none; font-size: 14px; font-weight: 500; padding: 12px 0">Process</a>
+<a class="pm-navlink" href="#stack" style="color: #A3A3A3; text-decoration: none; font-size: 14px; font-weight: 500; padding: 12px 0">Stack</a>
+<a class="pm-btn pm-btn-light" href="#audit" style="background: #FFFFFF; color: #0A0A0A; text-decoration: none; font-size: 14px; font-weight: 600; padding: 0 18px; min-height: 44px; display: inline-flex; align-items: center; border-radius: 999px">Free audit</a>
+<button class="pm-burger" type="button" aria-expanded="false" aria-controls="pm-mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+</nav>
+</div>
+<div class="pm-progress" aria-hidden="true"></div>
+<div id="pm-mobile-menu" class="pm-menu" role="dialog" aria-modal="false" aria-label="Menu">
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+<li><a class="pm-menu-link" href="#services"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #8A8A8A">01</span><span>Services</span></a></li>
+<li><a class="pm-menu-link" href="#work"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #8A8A8A">02</span><span>Work</span></a></li>
+<li><a class="pm-menu-link" href="#process"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #8A8A8A">03</span><span>Process</span></a></li>
+<li><a class="pm-menu-link" href="#stack"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #8A8A8A">04</span><span>Stack</span></a></li>
+<li><a class="pm-menu-link" href="#contact"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #8A8A8A">05</span><span>Contact</span></a></li>
+</ul>
+<div class="pm-menu-foot">
+<a class="pm-btn pm-btn-light pm-menu-cta" href="#audit" style="background: #FFFFFF; color: #0A0A0A; text-decoration: none; font-size: 16px; font-weight: 600; min-height: 56px; display: flex; align-items: center; justify-content: center; gap: 10px; border-radius: 999px">Get a free SEO audit
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 24px">
+<a class="pm-menu-mini" href="https://wa.me/917319508538">WhatsApp</a>
+<a class="pm-menu-mini" href="mailto:pranabxwork@gmail.com">Email</a>
+<a class="pm-menu-mini" href="https://www.linkedin.com/in/pranabmitra310804">LinkedIn</a>
+</div>
+</div>
+</div>
+</header>
+<div class="pm-scrim" aria-hidden="true"></div>
+<section id="pm-top" style="background: #0A0A0A; color: #FFFFFF; padding: 96px 24px 112px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 32px">
+<p data-reveal style="margin: 0; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #A3A3A3; display: flex; align-items: center; gap: 12px"><span aria-hidden="true" style="width: 28px; height: 1px; background: #737373; display: inline-block"></span>WordPress Developer &amp; SEO Strategist</p>
+<h1 data-reveal style="margin: 0; font-size: clamp(48px, 7vw, 104px); line-height: 0.98; letter-spacing: -0.045em; font-weight: 600">I build WordPress sites <span style="color: #737373">that rank</span> and bring in leads.</h1>
+<p data-reveal style="margin: 0; max-width: 560px; font-size: 19px; line-height: 1.6; color: #BDBDBD">New WordPress websites, redesigns and ongoing maintenance, with SEO built in, so your site keeps growing long after launch.</p>
+<div data-reveal style="display: flex; flex-direction: column; gap: 16px; padding-top: 8px">
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="pm-btn pm-btn-light" href="#audit" style="background: #FFFFFF; color: #0A0A0A; text-decoration: none; font-size: 16px; font-weight: 600; padding: 0 28px; min-height: 56px; display: inline-flex; align-items: center; gap: 10px; border-radius: 999px">Get a free SEO audit
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+<a class="pm-btn pm-btn-ghost" href="#work" style="background: transparent; color: #FFFFFF; text-decoration: none; font-size: 16px; font-weight: 500; padding: 0 28px; min-height: 56px; display: inline-flex; align-items: center; border-radius: 999px; border: 1px solid #404040">See my work</a>
+</div>
+<p style="margin: 0; display: flex; align-items: center; gap: 10px; font-size: 14px; color: #A3A3A3"><span class="pm-pulse" aria-hidden="true"></span>Free website review, delivered to your inbox. No obligation.</p>
+</div>
+</div>
+<figure data-reveal style="flex: 1 1 320px; max-width: 420px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px">
+<div class="pm-tilt" style="border-radius: 28px; overflow: hidden; background: #171717; border: 1px solid #262626; aspect-ratio: 5 / 6">
+<img src="images/pranab-mitra.jpg" alt="Portrait of Pranab Mitra" style="width: 100%; height: 100%; object-fit: cover; display: block">
+</div>
+<figcaption style="display: flex; justify-content: space-between; gap: 12px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #8A8A8A"><span>Pranab Mitra</span><span>WP / SEO</span></figcaption>
+</figure>
+</div>
+</section>
+<div aria-hidden="true" style="background: #171717; color: #BDBDBD; border-top: 1px solid #262626; border-bottom: 1px solid #262626; padding: 24px 0">
+<div class="pm-marquee">
+<div class="pm-track">
+<div class="pm-group"><span>WordPress</span><span aria-hidden="true" style="color: #525252">✦</span><span>New websites</span><span aria-hidden="true" style="color: #525252">✦</span><span>Redesigns</span><span aria-hidden="true" style="color: #525252">✦</span><span>Maintenance</span><span aria-hidden="true" style="color: #525252">✦</span><span>Elementor</span><span aria-hidden="true" style="color: #525252">✦</span><span>Technical SEO</span><span aria-hidden="true" style="color: #525252">✦</span><span>Content strategy</span><span aria-hidden="true" style="color: #525252">✦</span><span>GEO &amp; AEO</span><span aria-hidden="true" style="color: #525252">✦</span><span>Search Console</span><span aria-hidden="true" style="color: #525252">✦</span><span>Lead generation</span><span aria-hidden="true" style="color: #525252">✦</span></div>
+<div class="pm-group"><span>WordPress</span><span aria-hidden="true" style="color: #525252">✦</span><span>New websites</span><span aria-hidden="true" style="color: #525252">✦</span><span>Redesigns</span><span aria-hidden="true" style="color: #525252">✦</span><span>Maintenance</span><span aria-hidden="true" style="color: #525252">✦</span><span>Elementor</span><span aria-hidden="true" style="color: #525252">✦</span><span>Technical SEO</span><span aria-hidden="true" style="color: #525252">✦</span><span>Content strategy</span><span aria-hidden="true" style="color: #525252">✦</span><span>GEO &amp; AEO</span><span aria-hidden="true" style="color: #525252">✦</span><span>Search Console</span><span aria-hidden="true" style="color: #525252">✦</span><span>Lead generation</span><span aria-hidden="true" style="color: #525252">✦</span></div>
+</div>
+</div>
+</div>
+<section id="audit" class="pm-on-light" style="background: #FFFFFF; padding: 96px 16px">
+<div data-reveal class="pm-audit-card" style="max-width: 1240px; margin: 0 auto; background: #0A0A0A; color: #FFFFFF; border-radius: 36px; padding: clamp(24px, 5vw, 64px); display: flex; flex-wrap: wrap; align-items: flex-start; gap: 48px 64px; position: relative; overflow: hidden">
+<div aria-hidden="true" class="pm-glow"></div>
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 28px; position: relative">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; border-radius: 999px; border: 1px solid #333333; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #D4D4D4"><span class="pm-pulse" aria-hidden="true"></span>Free · No obligation</span>
+<h2 data-reveal style="margin: 0; font-size: clamp(38px, 4.8vw, 68px); line-height: 1; letter-spacing: -0.04em; font-weight: 600">Get a free website &amp; SEO audit.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #BDBDBD">Send me your site. I'll review it myself and email you a short report with the fixes that will move your rankings and leads the most.</p>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #8A8A8A">What you'll get</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px">
+<li data-reveal style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #D4D4D4"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 2px"><circle cx="10" cy="10" r="8.5" stroke-width="1.2"></circle><path d="M6.5 10.2l2.3 2.3 4.7-4.8"></path></svg><span>Speed and Core Web Vitals check</span></li>
+<li data-reveal style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #D4D4D4"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 2px"><circle cx="10" cy="10" r="8.5" stroke-width="1.2"></circle><path d="M6.5 10.2l2.3 2.3 4.7-4.8"></path></svg><span>Technical SEO issues from a full site crawl</span></li>
+<li data-reveal style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #D4D4D4"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 2px"><circle cx="10" cy="10" r="8.5" stroke-width="1.2"></circle><path d="M6.5 10.2l2.3 2.3 4.7-4.8"></path></svg><span>Keyword gaps and quick-win opportunities</span></li>
+<li data-reveal style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #D4D4D4"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 2px"><circle cx="10" cy="10" r="8.5" stroke-width="1.2"></circle><path d="M6.5 10.2l2.3 2.3 4.7-4.8"></path></svg><span>On-page fixes for your most important pages</span></li>
+<li data-reveal style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #D4D4D4"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 2px"><circle cx="10" cy="10" r="8.5" stroke-width="1.2"></circle><path d="M6.5 10.2l2.3 2.3 4.7-4.8"></path></svg><span>AI search (GEO) visibility check</span></li>
+</ul>
+</div>
+<p style="margin: 0; display: flex; align-items: center; gap: 10px; padding-top: 20px; border-top: 1px solid #262626; font-size: 15px; color: #A3A3A3"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="7.5"></circle><path d="M9 5v4l2.5 2"></path></svg>Report delivered to your inbox within 48 hours.</p>
+</div>
+<div style="flex: 999 1 460px; min-width: 0; background: #141414; border: 1px solid #2A2A2A; border-radius: 28px; padding: clamp(22px, 3.5vw, 40px); position: relative; box-shadow: 0 30px 80px -30px rgba(0,0,0,0.6)">
+<form id="pm-contact-form" action="https://formspree.io/f/moeeynrp" method="POST" class="pm-lead-form" data-success="pm-form-success" style="display: flex; flex-direction: column; gap: 22px" aria-label="Free audit request">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: 26px; letter-spacing: -0.025em; font-weight: 600; line-height: 1.15">Claim your free audit</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A3A3A3">Takes under a minute.</p>
+</div>
+<div class="pm-field" style="flex: 1 1 100%; min-width: 0">
+<label class="pm-label" for="pm-site">Your website</label>
+<input class="pm-input" id="pm-site" name="website" type="text" placeholder="yourwebsite.com" autocomplete="url" required maxlength="200" inputmode="url">
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px">
+<div class="pm-field" style="flex: 1 1 220px; min-width: 0">
+<label class="pm-label" for="pm-name">Name</label>
+<input class="pm-input" id="pm-name" name="name" type="text" placeholder="Your full name" autocomplete="name" required maxlength="100">
+</div>
+<div class="pm-field" style="flex: 1 1 220px; min-width: 0">
+<label class="pm-label" for="pm-email">Email</label>
+<input class="pm-input" id="pm-email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required maxlength="150">
+</div>
+</div>
+<div class="pm-field" style="flex: 1 1 100%; min-width: 0">
+<label class="pm-label" for="pm-phone">Phone / WhatsApp <span style="color: #8A8A8A; text-transform: none; letter-spacing: 0">(optional)</span></label>
+<input class="pm-input" id="pm-phone" name="phone" type="tel" placeholder="+91 98765 43210" autocomplete="tel" maxlength="30">
+</div>
+<fieldset style="border: 0; padding: 0; margin: 0; min-width: 0">
+<legend class="pm-label" style="padding: 0; margin-bottom: 10px">What are you interested in?</legend>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<label class="pm-chip"><input type="radio" name="goal" value="Just the free audit" checked><span>Just the free audit</span></label>
+<label class="pm-chip"><input type="radio" name="goal" value="New WordPress website"><span>New WordPress website</span></label>
+<label class="pm-chip"><input type="radio" name="goal" value="Maintenance / redesign"><span>Maintenance / redesign</span></label>
+<label class="pm-chip"><input type="radio" name="goal" value="SEO + web development"><span>SEO + web development</span></label>
+<label class="pm-chip"><input type="radio" name="goal" value="Only SEO"><span>Only SEO</span></label>
+</div>
+</fieldset>
+<div class="pm-field">
+<label class="pm-label" for="pm-message">Anything I should know? <span style="color: #8A8A8A; text-transform: none; letter-spacing: 0">(optional)</span></label>
+<textarea class="pm-input" id="pm-message" name="message" rows="3" style="min-height: 112px" placeholder="Competitors, target cities, problems you've noticed..." maxlength="3000"></textarea>
+</div>
+<div aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden">
+<label for="pm-company">Company</label>
+<input id="pm-company" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+</div>
+<input type="hidden" name="source" value="Audit section">
+<button id="pm-submit" class="pm-btn pm-btn-light pm-submit" type="submit" style="width: 100%; justify-content: center; background: #FFFFFF; color: #0A0A0A; font-size: 17px; font-weight: 600; padding: 0 28px; min-height: 60px; display: inline-flex; align-items: center; gap: 10px; border-radius: 999px; border: 0">Get my free audit
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></button>
+<p id="pm-form-status" role="status" aria-live="polite" style="margin: 0; font-size: 15px; line-height: 1.5; color: #FFFFFF"></p>
+<p style="margin: 0; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 13px; color: #8A8A8A; text-align: center"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="9" height="6.5" rx="1.5"></rect><path d="M4.5 6V4.5a2.5 2.5 0 015 0V6"></path></svg>No spam. Your details are only used to send your audit.</p>
+</form>
+<div id="pm-form-success" tabindex="-1" hidden style="display: flex; flex-direction: column; align-items: flex-start; gap: 20px; padding: 16px 0; outline: none">
+<span class="pm-pop" aria-hidden="true" style="width: 60px; height: 60px; border-radius: 999px; background: #FFFFFF; color: #0A0A0A; display: flex; align-items: center; justify-content: center">
+<svg width="28" height="28" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path class="pm-draw" d="M6 13.5l4.5 4.5L20 8"></path></svg>
+</span>
+<h3 style="margin: 0; font-size: 28px; letter-spacing: -0.025em; font-weight: 600; line-height: 1.15">You're in, <span id="pm-success-name" data-fill="name">there</span>.</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #BDBDBD">I'll review <strong id="pm-success-site" data-fill="website" style="color: #FFFFFF; font-weight: 600">your site</strong> and send the audit to <strong id="pm-success-email" data-fill="email" style="color: #FFFFFF; font-weight: 600">your inbox</strong> within 48 hours.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A3A3A3">Need it sooner? <a href="https://wa.me/917319508538" style="color: #FFFFFF; text-decoration: underline; text-underline-offset: 3px">Message me on WhatsApp</a>.</p>
+<button id="pm-send-another" data-again class="pm-btn pm-btn-ghost" type="button" style="background: transparent; color: #FFFFFF; font-size: 15px; font-weight: 500; padding: 0 22px; min-height: 48px; display: inline-flex; align-items: center; border-radius: 999px; border: 1px solid #404040">Request another audit</button>
+</div>
+</div>
+</div>
+</section>
+<section id="services" class="pm-on-light" style="background: #FFFFFF; padding: 120px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px; flex: 1 1 480px; min-width: 0">
+<p data-reveal style="margin: 0; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #6B6B6B">01 — Services</p>
+<h2 data-reveal style="margin: 0; font-size: clamp(36px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 600">Four ways to work together. <span style="color: #8F8F8F">One free way to start.</span></h2>
+</div>
+<p data-reveal style="margin: 0; flex: 1 1 320px; max-width: 420px; font-size: 17px; line-height: 1.6; color: #525252">From a brand-new WordPress site to SEO for the one you already have, pick what fits. Not sure? The free audit will tell you.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<article data-reveal style="flex: 1 1 460px; min-width: 0; background: #FFFFFF; color: #0A0A0A; border: 1px solid #E5E5E5; border-radius: 28px; padding: clamp(28px, 3.5vw, 40px); display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 16px">
+<svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="30" height="24" rx="4"></rect><path d="M5 14h30M15 21l-4 3 4 3M25 21l4 3-4 3M21 19l-2 10"></path></svg>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #6B6B6B">01 · BUILD</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.025em; font-weight: 600; line-height: 1.1">New WordPress Development</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #6B6B6B">A brand-new website built in WordPress and Elementor: fast, mobile-friendly and set up for search from day one.</p>
+</div>
+<ul style="margin: 0; padding: 20px 0 0; list-style: none; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #E5E5E5">
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #404040"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>Elementor page design with service and location pages</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #404040"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>Lead forms, WhatsApp and click-to-call built in</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #404040"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>WebP images and speed-friendly page setup</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #404040"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>On-page SEO, schema, Search Console and GA4 set up at launch</span></li>
+</ul>
+<div style="margin-top: auto; padding-top: 8px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 20px">
+<p style="margin: 0; flex: 1 1 200px; min-width: 0; font-size: 14px; line-height: 1.5; color: #6B6B6B"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; display: block; margin-bottom: 2px">Best for</span>New businesses, or anyone starting fresh</p>
+<a class="pm-btn pm-btn-dark" href="#audit" data-service="New WordPress website" style="background: #0A0A0A; color: #FFFFFF; border: 1px solid #0A0A0A; text-decoration: none; font-size: 15px; font-weight: 600; padding: 0 20px; min-height: 48px; display: inline-flex; align-items: center; gap: 8px; border-radius: 999px">Enquire<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+</div>
+</article>
+<article data-reveal style="flex: 1 1 460px; min-width: 0; background: #FFFFFF; color: #0A0A0A; border: 1px solid #E5E5E5; border-radius: 28px; padding: clamp(28px, 3.5vw, 40px); display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 16px">
+<svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24.5 9.5a7 7 0 00-9.3 8.8L7 26.5a2.8 2.8 0 004 4l8.2-8.2a7 7 0 008.8-9.3l-4.2 4.2-3.5-.5-.5-3.5z"></path></svg>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #6B6B6B">02 · CARE</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.025em; font-weight: 600; line-height: 1.1">Website Maintenance &amp; Redesign</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #6B6B6B">Keep your existing WordPress site updated and running smoothly, or give an outdated one a modern redesign without losing its rankings.</p>
+</div>
+<ul style="margin: 0; padding: 20px 0 0; list-style: none; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #E5E5E5">
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #404040"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>WordPress, theme and plugin updates with backups</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #404040"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>Content updates, layout fixes and plugin troubleshooting</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #404040"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>Redesign of key pages on one consistent design</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #404040"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>Redirects and on-page SEO protected through a redesign</span></li>
+</ul>
+<div style="margin-top: auto; padding-top: 8px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 20px">
+<p style="margin: 0; flex: 1 1 200px; min-width: 0; font-size: 14px; line-height: 1.5; color: #6B6B6B"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; display: block; margin-bottom: 2px">Best for</span>Sites that feel slow, outdated or hard to manage</p>
+<a class="pm-btn pm-btn-dark" href="#audit" data-service="Maintenance / redesign" style="background: #0A0A0A; color: #FFFFFF; border: 1px solid #0A0A0A; text-decoration: none; font-size: 15px; font-weight: 600; padding: 0 20px; min-height: 48px; display: inline-flex; align-items: center; gap: 8px; border-radius: 999px">Enquire<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+</div>
+</article>
+<article data-reveal style="flex: 1 1 460px; min-width: 0; background: #0A0A0A; color: #FFFFFF; border: 1px solid #0A0A0A; border-radius: 28px; padding: clamp(28px, 3.5vw, 40px); display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 16px">
+<svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="22" height="17" rx="3"></rect><path d="M4 14h22"></path><circle cx="28" cy="26" r="7"></circle><path d="M33 31l4 4M25 27l2-2 2 2 3-3"></path></svg>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #A3A3A3">03 · COMPLETE</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.025em; font-weight: 600; line-height: 1.1">SEO + Web Development</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #BDBDBD">Your website and its search growth handled together, so every fix and every new page is made with rankings in mind.</p>
+</div>
+<ul style="margin: 0; padding: 20px 0 0; list-style: none; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #262626">
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #D4D4D4"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>Technical SEO fixes made through WordPress and SEO plugins</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #D4D4D4"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>New service, location and landing pages built around keywords</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #D4D4D4"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>Monthly blogs and on-page content optimisation</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #D4D4D4"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>Monthly Search Console and GA4 reporting</span></li>
+</ul>
+<div style="margin-top: auto; padding-top: 8px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 20px">
+<p style="margin: 0; flex: 1 1 200px; min-width: 0; font-size: 14px; line-height: 1.5; color: #A3A3A3"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; display: block; margin-bottom: 2px">Best for</span>Businesses that want one person for site and SEO</p>
+<a class="pm-btn pm-btn-ghost" href="#audit" data-service="SEO + web development" style="background: transparent; color: #FFFFFF; border: 1px solid #404040; text-decoration: none; font-size: 15px; font-weight: 600; padding: 0 20px; min-height: 48px; display: inline-flex; align-items: center; gap: 8px; border-radius: 999px">Enquire<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+</div>
+</article>
+<article data-reveal style="flex: 1 1 460px; min-width: 0; background: #FFFFFF; color: #0A0A0A; border: 1px solid #E5E5E5; border-radius: 28px; padding: clamp(28px, 3.5vw, 40px); display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 16px">
+<svg aria-hidden="true" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="17" r="10"></circle><path d="M24.5 24.5L34 34M12 20l3.5-3.5 3 3L23 15"></path></svg>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #6B6B6B">04 · GROW</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h3 style="margin: 0; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.025em; font-weight: 600; line-height: 1.1">SEO Only</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #6B6B6B">Happy with your website? I focus purely on rankings, traffic and visibility in Google and AI search.</p>
+</div>
+<ul style="margin: 0; padding: 20px 0 0; list-style: none; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #E5E5E5">
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #404040"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>Technical SEO audits with Screaming Frog</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #404040"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>Keyword research and topic clusters</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #404040"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>Monthly blog briefs and on-page content optimisation</span></li>
+<li style="display: flex; gap: 10px; align-items: flex-start; font-size: 16px; line-height: 1.5; color: #404040"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex: 0 0 auto; margin-top: 3px"><path d="M4.5 10.5l3.5 3.5 7.5-8"></path></svg><span>GEO &amp; AEO: getting cited in AI search answers</span></li>
+</ul>
+<div style="margin-top: auto; padding-top: 8px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 20px">
+<p style="margin: 0; flex: 1 1 200px; min-width: 0; font-size: 14px; line-height: 1.5; color: #6B6B6B"><span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; display: block; margin-bottom: 2px">Best for</span>Sites that look good but aren't getting found</p>
+<a class="pm-btn pm-btn-dark" href="#audit" data-service="Only SEO" style="background: #0A0A0A; color: #FFFFFF; border: 1px solid #0A0A0A; text-decoration: none; font-size: 15px; font-weight: 600; padding: 0 20px; min-height: 48px; display: inline-flex; align-items: center; gap: 8px; border-radius: 999px">Enquire<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+</div>
+</article>
+<article data-reveal style="flex: 1 1 100%; min-width: 0; background: #F5F5F5; color: #0A0A0A; border: 1px solid #E5E5E5; border-radius: 28px; padding: clamp(28px, 3.5vw, 40px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 48px">
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #6B6B6B">05 · FREE</span>
+<h3 style="margin: 0; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.025em; font-weight: 600; line-height: 1.1">Free Website &amp; SEO Audit</h3>
+<p style="margin: 0; max-width: 640px; font-size: 16px; line-height: 1.6; color: #525252">Not sure which option you need? I'll review your site's speed, technical SEO and keywords, then recommend the right next step. No obligation.</p>
+</div>
+<a class="pm-btn pm-btn-dark" href="#audit" style="background: #0A0A0A; color: #FFFFFF; text-decoration: none; font-size: 16px; font-weight: 600; padding: 0 28px; min-height: 56px; display: inline-flex; align-items: center; gap: 10px; border-radius: 999px">Get my free audit<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+</article>
+</div>
+</div>
+</section>
+<section id="work" class="pm-on-light" style="background: #F5F5F5; padding: 120px 24px; border-top: 1px solid #E5E5E5">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 64px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px; flex: 1 1 480px; min-width: 0">
+<p data-reveal style="margin: 0; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #6B6B6B">02 — Selected work</p>
+<h2 data-reveal style="margin: 0; font-size: clamp(36px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 600">Sites built. <span style="color: #8F8F8F">Sites grown.</span></h2>
+</div>
+<p data-reveal style="margin: 0; flex: 1 1 320px; max-width: 420px; font-size: 17px; line-height: 1.6; color: #525252">WordPress websites I've built, and sites I'm growing with SEO, across travel, hospitality, education, events and healthcare.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px">
+<div data-reveal style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; padding-bottom: 16px; border-bottom: 1px solid #D4D4D4">
+<h3 style="margin: 0; font-size: clamp(24px, 2.4vw, 32px); letter-spacing: -0.025em; font-weight: 600">Web development <span style="color: #8F8F8F">(4)</span></h3>
+<p style="margin: 0; font-size: 15px; color: #525252">Built in WordPress and Elementor</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<a data-reveal class="pm-card" href="https://halla.co.in/" target="_blank" rel="noopener" style="flex: 1 1 460px; min-width: 0; text-decoration: none; color: #0A0A0A; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 24px; padding: clamp(16px, 2vw, 20px) clamp(16px, 2vw, 20px) clamp(24px, 3vw, 32px); display: flex; flex-direction: column; gap: 20px">
+<div class="pm-shot" style="border-radius: 14px; overflow: hidden; background: #F0F0F0; border: 1px solid #E5E5E5">
+<div aria-hidden="true" style="display: flex; align-items: center; gap: 6px; padding: 9px 12px; background: #F0F0F0"><span style="width: 8px; height: 8px; border-radius: 999px; background: #C4C4C4"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #C4C4C4"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #C4C4C4"></span><span style="margin-left: 8px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; color: #6B6B6B">halla.co.in</span></div>
+<img src="images/work-halla.webp" alt="Homepage of Halla" width="1200" height="600" loading="lazy" style="display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; object-position: top">
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; padding: 0 clamp(4px, 1vw, 12px); flex: 1 1 auto">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #6B6B6B">01 · WEB DEVELOPMENT</span>
+<svg class="pm-arrow" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#0A0A0A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16L16 6M8 6h8v8"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: clamp(26px, 2.4vw, 30px); letter-spacing: -0.025em; font-weight: 600">Halla</h3>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #6B6B6B">halla.co.in</span>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #404040">Website for a digital marketing studio in India. Service and city location pages built in Elementor, all on one consistent design.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto">
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #F0F0F0; color: #404040">WordPress</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #F0F0F0; color: #404040">Elementor</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #F0F0F0; color: #404040">Location pages</span>
+</div>
+</div>
+</a>
+<a data-reveal class="pm-card" href="https://puruliatravels.com/" target="_blank" rel="noopener" style="flex: 1 1 460px; min-width: 0; text-decoration: none; color: #0A0A0A; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 24px; padding: clamp(16px, 2vw, 20px) clamp(16px, 2vw, 20px) clamp(24px, 3vw, 32px); display: flex; flex-direction: column; gap: 20px">
+<div class="pm-shot" style="border-radius: 14px; overflow: hidden; background: #F0F0F0; border: 1px solid #E5E5E5">
+<div aria-hidden="true" style="display: flex; align-items: center; gap: 6px; padding: 9px 12px; background: #F0F0F0"><span style="width: 8px; height: 8px; border-radius: 999px; background: #C4C4C4"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #C4C4C4"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #C4C4C4"></span><span style="margin-left: 8px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; color: #6B6B6B">puruliatravels.com</span></div>
+<img src="images/work-purulia-travels.webp" alt="Homepage of Purulia Travels" width="1200" height="600" loading="lazy" style="display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; object-position: top">
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; padding: 0 clamp(4px, 1vw, 12px); flex: 1 1 auto">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #6B6B6B">02 · WEB DEVELOPMENT</span>
+<svg class="pm-arrow" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#0A0A0A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16L16 6M8 6h8v8"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: clamp(26px, 2.4vw, 30px); letter-spacing: -0.025em; font-weight: 600">Purulia Travels</h3>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #6B6B6B">puruliatravels.com</span>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #404040">Website for a Purulia travel company offering hotels, tour packages and car rentals, with a site-wide header that keeps call and WhatsApp one tap away.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto">
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #F0F0F0; color: #404040">WordPress</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #F0F0F0; color: #404040">Travel</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #F0F0F0; color: #404040">Click-to-call</span>
+</div>
+</div>
+</a>
+<a data-reveal class="pm-card" href="https://puruliaresort.com/" target="_blank" rel="noopener" style="flex: 1 1 460px; min-width: 0; text-decoration: none; color: #0A0A0A; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 24px; padding: clamp(16px, 2vw, 20px) clamp(16px, 2vw, 20px) clamp(24px, 3vw, 32px); display: flex; flex-direction: column; gap: 20px">
+<div class="pm-shot" style="border-radius: 14px; overflow: hidden; background: #F0F0F0; border: 1px solid #E5E5E5">
+<div aria-hidden="true" style="display: flex; align-items: center; gap: 6px; padding: 9px 12px; background: #F0F0F0"><span style="width: 8px; height: 8px; border-radius: 999px; background: #C4C4C4"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #C4C4C4"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #C4C4C4"></span><span style="margin-left: 8px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; color: #6B6B6B">puruliaresort.com</span></div>
+<img src="images/work-purulia-resort.webp" alt="Homepage of Purulia Resort" width="1200" height="600" loading="lazy" style="display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; object-position: top">
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; padding: 0 clamp(4px, 1vw, 12px); flex: 1 1 auto">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #6B6B6B">03 · WEB DEVELOPMENT</span>
+<svg class="pm-arrow" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#0A0A0A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16L16 6M8 6h8v8"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: clamp(26px, 2.4vw, 30px); letter-spacing: -0.025em; font-weight: 600">Purulia Resort</h3>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #6B6B6B">puruliaresort.com</span>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #404040">Resort listing website and sister site of Purulia Travels, with its own content. Header, footer, home, about, contact and policy pages.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto">
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #F0F0F0; color: #404040">WordPress</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #F0F0F0; color: #404040">Hospitality</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #F0F0F0; color: #404040">Listings</span>
+</div>
+</div>
+</a>
+<a data-reveal class="pm-card" href="https://noinjuryrunning.com/" target="_blank" rel="noopener" style="flex: 1 1 460px; min-width: 0; text-decoration: none; color: #0A0A0A; background: #FFFFFF; border: 1px solid #E5E5E5; border-radius: 24px; padding: clamp(16px, 2vw, 20px) clamp(16px, 2vw, 20px) clamp(24px, 3vw, 32px); display: flex; flex-direction: column; gap: 20px">
+<div class="pm-shot" style="border-radius: 14px; overflow: hidden; background: #F0F0F0; border: 1px solid #E5E5E5">
+<div aria-hidden="true" style="display: flex; align-items: center; gap: 6px; padding: 9px 12px; background: #F0F0F0"><span style="width: 8px; height: 8px; border-radius: 999px; background: #C4C4C4"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #C4C4C4"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #C4C4C4"></span><span style="margin-left: 8px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; color: #6B6B6B">noinjuryrunning.com</span></div>
+<img src="images/work-no-injury-running.webp" alt="Homepage of No Injury Running" width="1200" height="600" loading="lazy" style="display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; object-position: top">
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; padding: 0 clamp(4px, 1vw, 12px); flex: 1 1 auto">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #6B6B6B">04 · WEB DEVELOPMENT</span>
+<svg class="pm-arrow" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#0A0A0A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16L16 6M8 6h8v8"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: clamp(26px, 2.4vw, 30px); letter-spacing: -0.025em; font-weight: 600">No Injury Running</h3>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #6B6B6B">noinjuryrunning.com</span>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #404040">Blog about running injuries, built in Elementor Pro with search, category tags and a recent posts sidebar.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto">
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #F0F0F0; color: #404040">Elementor Pro</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #F0F0F0; color: #404040">Blog</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px">
+<div data-reveal style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; padding-bottom: 16px; border-bottom: 1px solid #D4D4D4">
+<h3 style="margin: 0; font-size: clamp(24px, 2.4vw, 32px); letter-spacing: -0.025em; font-weight: 600">SEO <span style="color: #8F8F8F">(4)</span></h3>
+<p style="margin: 0; font-size: 15px; color: #525252">Rankings, content and reporting</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<a data-reveal class="pm-card" href="https://www.ourguest.in/" target="_blank" rel="noopener" style="flex: 1 1 460px; min-width: 0; text-decoration: none; color: #FFFFFF; background: #0A0A0A; border: 1px solid #0A0A0A; border-radius: 24px; padding: clamp(16px, 2vw, 20px) clamp(16px, 2vw, 20px) clamp(24px, 3vw, 32px); display: flex; flex-direction: column; gap: 20px">
+<div class="pm-shot" style="border-radius: 14px; overflow: hidden; background: #1C1C1C; border: 1px solid #262626">
+<div aria-hidden="true" style="display: flex; align-items: center; gap: 6px; padding: 9px 12px; background: #1C1C1C"><span style="width: 8px; height: 8px; border-radius: 999px; background: #404040"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #404040"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #404040"></span><span style="margin-left: 8px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; color: #A3A3A3">ourguest.in</span></div>
+<img src="images/work-ourguest.webp" alt="Homepage of OurGuest" width="1200" height="600" loading="lazy" style="display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; object-position: top">
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; padding: 0 clamp(4px, 1vw, 12px); flex: 1 1 auto">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #A3A3A3">05 · SEO</span>
+<svg class="pm-arrow" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16L16 6M8 6h8v8"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: clamp(26px, 2.4vw, 30px); letter-spacing: -0.025em; font-weight: 600">OurGuest</h3>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #A3A3A3">ourguest.in</span>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #D4D4D4">Homestays, tours and experiences in North East India. A 6-month SEO &amp; GEO plan, with page structure, headings, meta tags and FAQs for their writers.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto">
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #262626; color: #D4D4D4">SEO</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #262626; color: #D4D4D4">GEO</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #262626; color: #D4D4D4">Content planning</span>
+</div>
+</div>
+</a>
+<a data-reveal class="pm-card" href="https://welmontschool.com/" target="_blank" rel="noopener" style="flex: 1 1 460px; min-width: 0; text-decoration: none; color: #FFFFFF; background: #0A0A0A; border: 1px solid #0A0A0A; border-radius: 24px; padding: clamp(16px, 2vw, 20px) clamp(16px, 2vw, 20px) clamp(24px, 3vw, 32px); display: flex; flex-direction: column; gap: 20px">
+<div class="pm-shot" style="border-radius: 14px; overflow: hidden; background: #1C1C1C; border: 1px solid #262626">
+<div aria-hidden="true" style="display: flex; align-items: center; gap: 6px; padding: 9px 12px; background: #1C1C1C"><span style="width: 8px; height: 8px; border-radius: 999px; background: #404040"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #404040"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #404040"></span><span style="margin-left: 8px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; color: #A3A3A3">welmontschool.com</span></div>
+<img src="images/work-welmont-school.webp" alt="Homepage of Welmont School" width="1200" height="600" loading="lazy" style="display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; object-position: top">
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; padding: 0 clamp(4px, 1vw, 12px); flex: 1 1 auto">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #A3A3A3">06 · SEO</span>
+<svg class="pm-arrow" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16L16 6M8 6h8v8"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: clamp(26px, 2.4vw, 30px); letter-spacing: -0.025em; font-weight: 600">Welmont School</h3>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #A3A3A3">welmontschool.com</span>
+</div>
+<div style="display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap">
+<span style="font-size: 56px; font-weight: 600; letter-spacing: -0.05em; line-height: 1" data-count="15">15</span>
+<span style="font-size: 15px; line-height: 1.4; color: #BDBDBD">blogs published in 3 months</span>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #D4D4D4">Blog-led SEO for a preschool and daycare in Jaipur, using Search Console to find the keywords worth building on.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto">
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #262626; color: #D4D4D4">Content SEO</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #262626; color: #D4D4D4">Search Console</span>
+</div>
+</div>
+</a>
+<a data-reveal class="pm-card" href="https://www.greenmyna.com/" target="_blank" rel="noopener" style="flex: 1 1 460px; min-width: 0; text-decoration: none; color: #FFFFFF; background: #0A0A0A; border: 1px solid #0A0A0A; border-radius: 24px; padding: clamp(16px, 2vw, 20px) clamp(16px, 2vw, 20px) clamp(24px, 3vw, 32px); display: flex; flex-direction: column; gap: 20px">
+<div class="pm-shot" style="border-radius: 14px; overflow: hidden; background: #1C1C1C; border: 1px solid #262626">
+<div aria-hidden="true" style="display: flex; align-items: center; gap: 6px; padding: 9px 12px; background: #1C1C1C"><span style="width: 8px; height: 8px; border-radius: 999px; background: #404040"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #404040"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #404040"></span><span style="margin-left: 8px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; color: #A3A3A3">greenmyna.com</span></div>
+<img src="images/work-greenmyna.webp" alt="Homepage of Greenmyna" width="1200" height="600" loading="lazy" style="display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; object-position: top">
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; padding: 0 clamp(4px, 1vw, 12px); flex: 1 1 auto">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #A3A3A3">07 · SEO</span>
+<svg class="pm-arrow" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16L16 6M8 6h8v8"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: clamp(26px, 2.4vw, 30px); letter-spacing: -0.025em; font-weight: 600">Greenmyna</h3>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #A3A3A3">greenmyna.com</span>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #D4D4D4">Eco-conscious event planning. Monthly Search Console reports, technical SEO audits and blog refreshes based on keyword data.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto">
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #262626; color: #D4D4D4">Technical SEO</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #262626; color: #D4D4D4">Reporting</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #262626; color: #D4D4D4">Blog refresh</span>
+</div>
+</div>
+</a>
+<a data-reveal class="pm-card" href="https://radiantsmiles.co.in/" target="_blank" rel="noopener" style="flex: 1 1 460px; min-width: 0; text-decoration: none; color: #FFFFFF; background: #0A0A0A; border: 1px solid #0A0A0A; border-radius: 24px; padding: clamp(16px, 2vw, 20px) clamp(16px, 2vw, 20px) clamp(24px, 3vw, 32px); display: flex; flex-direction: column; gap: 20px">
+<div class="pm-shot" style="border-radius: 14px; overflow: hidden; background: #1C1C1C; border: 1px solid #262626">
+<div aria-hidden="true" style="display: flex; align-items: center; gap: 6px; padding: 9px 12px; background: #1C1C1C"><span style="width: 8px; height: 8px; border-radius: 999px; background: #404040"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #404040"></span><span style="width: 8px; height: 8px; border-radius: 999px; background: #404040"></span><span style="margin-left: 8px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11px; color: #A3A3A3">radiantsmiles.co.in</span></div>
+<img src="images/work-radiant-smiles.webp" alt="Homepage of Radiant Smiles" width="1200" height="600" loading="lazy" style="display: block; width: 100%; height: auto; aspect-ratio: 2 / 1; object-fit: cover; object-position: top">
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; padding: 0 clamp(4px, 1vw, 12px); flex: 1 1 auto">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; color: #A3A3A3">08 · SEO</span>
+<svg class="pm-arrow" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16L16 6M8 6h8v8"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h3 style="margin: 0; font-size: clamp(26px, 2.4vw, 30px); letter-spacing: -0.025em; font-weight: 600">Radiant Smiles</h3>
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #A3A3A3">radiantsmiles.co.in</span>
+</div>
+<div style="display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap">
+<span style="font-size: 56px; font-weight: 600; letter-spacing: -0.05em; line-height: 1" data-count="3">3</span>
+<span style="font-size: 15px; line-height: 1.4; color: #BDBDBD">new area pages every month</span>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #D4D4D4">Dental clinic in Chembur, Mumbai. Local SEO with neighbourhood location pages, plus Google Ads with conversion tracking.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto">
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #262626; color: #D4D4D4">Local SEO</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #262626; color: #D4D4D4">Location pages</span>
+<span style="font-size: 13px; padding: 6px 12px; border-radius: 999px; background: #262626; color: #D4D4D4">Google Ads</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section id="process" style="background: #0A0A0A; color: #FFFFFF; padding: 120px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<p data-reveal style="margin: 0; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #A3A3A3">03 — How I work</p>
+<h2 data-reveal style="margin: 0; font-size: clamp(36px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 600">Audit. Plan. Build. <span style="color: #737373">Measure.</span></h2>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0; border-top: 1px solid #262626">
+<li data-reveal style="flex: 1 1 260px; min-width: 0; padding: 32px 28px 32px 0; display: flex; flex-direction: column; gap: 14px; border-bottom: 1px solid #262626">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #8A8A8A">01</span>
+<h3 style="margin: 0; font-size: 24px; letter-spacing: -0.02em; font-weight: 600">Audit</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #A3A3A3">Crawl the site, read Search Console and GA4, and find what is holding it back.</p>
+</li>
+<li data-reveal style="flex: 1 1 260px; min-width: 0; padding: 32px 28px 32px 0; display: flex; flex-direction: column; gap: 14px; border-bottom: 1px solid #262626">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #8A8A8A">02</span>
+<h3 style="margin: 0; font-size: 24px; letter-spacing: -0.02em; font-weight: 600">Plan</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #A3A3A3">Keywords, page structure and a clear month-by-month scope of work.</p>
+</li>
+<li data-reveal style="flex: 1 1 260px; min-width: 0; padding: 32px 28px 32px 0; display: flex; flex-direction: column; gap: 14px; border-bottom: 1px solid #262626">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #8A8A8A">03</span>
+<h3 style="margin: 0; font-size: 24px; letter-spacing: -0.02em; font-weight: 600">Build</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #A3A3A3">Pages in WordPress and Elementor, content briefs, schema and technical fixes.</p>
+</li>
+<li data-reveal style="flex: 1 1 260px; min-width: 0; padding: 32px 28px 32px 0; display: flex; flex-direction: column; gap: 14px; border-bottom: 1px solid #262626">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; color: #8A8A8A">04</span>
+<h3 style="margin: 0; font-size: 24px; letter-spacing: -0.02em; font-weight: 600">Measure</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #A3A3A3">Track rankings, impressions and leads every month, then sharpen the plan.</p>
+</li>
+</ol>
+</div>
+</section>
+<section id="stack" class="pm-on-light" style="background: #FFFFFF; padding: 120px 24px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<p data-reveal style="margin: 0; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #6B6B6B">04 — Toolkit</p>
+<h2 data-reveal style="margin: 0; font-size: clamp(36px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 600">The tools <span style="color: #8F8F8F">I work in daily.</span></h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; border-top: 1px solid #E5E5E5; border-left: 1px solid #E5E5E5">
+<div data-reveal class="pm-tile" style="flex: 1 1 280px; min-width: 0; padding: 32px; border-right: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; display: flex; flex-direction: column; gap: 8px; background: #FFFFFF; color: #0A0A0A">
+<span style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em">WordPress</span>
+<span class="pm-tile-sub" style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #6B6B6B">CMS</span>
+</div>
+<div data-reveal class="pm-tile" style="flex: 1 1 280px; min-width: 0; padding: 32px; border-right: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; display: flex; flex-direction: column; gap: 8px; background: #FFFFFF; color: #0A0A0A">
+<span style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em">Elementor</span>
+<span class="pm-tile-sub" style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #6B6B6B">Page builder</span>
+</div>
+<div data-reveal class="pm-tile" style="flex: 1 1 280px; min-width: 0; padding: 32px; border-right: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; display: flex; flex-direction: column; gap: 8px; background: #FFFFFF; color: #0A0A0A">
+<span style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em">Yoast SEO</span>
+<span class="pm-tile-sub" style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #6B6B6B">On-page &amp; schema</span>
+</div>
+<div data-reveal class="pm-tile" style="flex: 1 1 280px; min-width: 0; padding: 32px; border-right: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; display: flex; flex-direction: column; gap: 8px; background: #FFFFFF; color: #0A0A0A">
+<span style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em">Search Console</span>
+<span class="pm-tile-sub" style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #6B6B6B">Search performance</span>
+</div>
+<div data-reveal class="pm-tile" style="flex: 1 1 280px; min-width: 0; padding: 32px; border-right: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; display: flex; flex-direction: column; gap: 8px; background: #FFFFFF; color: #0A0A0A">
+<span style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em">Google Analytics 4</span>
+<span class="pm-tile-sub" style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #6B6B6B">Traffic &amp; conversions</span>
+</div>
+<div data-reveal class="pm-tile" style="flex: 1 1 280px; min-width: 0; padding: 32px; border-right: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; display: flex; flex-direction: column; gap: 8px; background: #FFFFFF; color: #0A0A0A">
+<span style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em">Ubersuggest</span>
+<span class="pm-tile-sub" style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #6B6B6B">Keyword research</span>
+</div>
+<div data-reveal class="pm-tile" style="flex: 1 1 280px; min-width: 0; padding: 32px; border-right: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; display: flex; flex-direction: column; gap: 8px; background: #FFFFFF; color: #0A0A0A">
+<span style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em">Screaming Frog</span>
+<span class="pm-tile-sub" style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #6B6B6B">Technical audits</span>
+</div>
+<div data-reveal class="pm-tile" style="flex: 1 1 280px; min-width: 0; padding: 32px; border-right: 1px solid #E5E5E5; border-bottom: 1px solid #E5E5E5; display: flex; flex-direction: column; gap: 8px; background: #F5F5F5; color: #0A0A0A">
+<span style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em">HTML, CSS, JS &amp; PHP</span>
+<span class="pm-tile-sub" style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #6B6B6B">Site customisation</span>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" style="background: #0A0A0A; color: #FFFFFF; padding: 128px 24px 64px">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 64px">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<p data-reveal style="margin: 0; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #A3A3A3">05 — Contact</p>
+<h2 data-reveal style="margin: 0; font-size: clamp(44px, 6.4vw, 96px); line-height: 0.98; letter-spacing: -0.045em; font-weight: 600; max-width: 1000px">New site, redesign or more traffic? <span style="color: #737373">Let's talk.</span></h2>
+</div>
+<div data-reveal style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="pm-btn pm-btn-light" href="#audit" style="background: #FFFFFF; color: #0A0A0A; text-decoration: none; font-size: 16px; font-weight: 600; padding: 0 28px; min-height: 56px; display: inline-flex; align-items: center; gap: 10px; border-radius: 999px">Get a free SEO audit
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+<a class="pm-btn pm-btn-ghost" href="https://wa.me/917319508538" style="background: transparent; color: #FFFFFF; text-decoration: none; font-size: 16px; font-weight: 500; padding: 0 28px; min-height: 56px; display: inline-flex; align-items: center; border-radius: 999px; border: 1px solid #404040">WhatsApp me</a>
+</div>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #262626">
+<a data-reveal class="pm-row-link" href="mailto:pranabxwork@gmail.com" style="text-decoration: none; color: #FFFFFF; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 20px; padding: 24px 8px; border-bottom: 1px solid #262626; border-radius: 4px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #8A8A8A; flex: 0 0 84px">Email</span>
+<span style="font-size: clamp(18px, 1.7vw, 22px); font-weight: 500; letter-spacing: -0.015em; flex: 1 1 140px; min-width: 0; overflow-wrap: anywhere">pranabxwork@gmail.com</span>
+<svg class="pm-arrow" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16L16 6M8 6h8v8"></path></svg>
+</a>
+<a data-reveal class="pm-row-link" href="https://wa.me/917319508538" style="text-decoration: none; color: #FFFFFF; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 20px; padding: 24px 8px; border-bottom: 1px solid #262626; border-radius: 4px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #8A8A8A; flex: 0 0 84px">WhatsApp</span>
+<span style="font-size: clamp(18px, 1.7vw, 22px); font-weight: 500; letter-spacing: -0.015em; flex: 1 1 140px; min-width: 0">+91 73195 08538</span>
+<svg class="pm-arrow" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16L16 6M8 6h8v8"></path></svg>
+</a>
+<a data-reveal class="pm-row-link" href="https://www.linkedin.com/in/pranabmitra310804" style="text-decoration: none; color: #FFFFFF; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 20px; padding: 24px 8px; border-bottom: 1px solid #262626; border-radius: 4px">
+<span style="font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #8A8A8A; flex: 0 0 84px">LinkedIn</span>
+<span style="font-size: clamp(18px, 1.7vw, 22px); font-weight: 500; letter-spacing: -0.015em; flex: 1 1 140px; min-width: 0; overflow-wrap: anywhere">in/pranabmitra310804</span>
+<svg class="pm-arrow" aria-hidden="true" width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16L16 6M8 6h8v8"></path></svg>
+</a>
+</div>
+<div data-reveal style="background: #141414; border: 1px solid #2A2A2A; border-radius: 28px; padding: clamp(22px, 3.5vw, 40px); display: flex; flex-direction: column; gap: 24px; position: relative; overflow: hidden">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px 32px">
+<div style="display: flex; flex-direction: column; gap: 14px; flex: 1 1 360px; min-width: 0">
+<span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; padding: 7px 13px; border-radius: 999px; border: 1px solid #333333; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #D4D4D4"><span class="pm-pulse" aria-hidden="true"></span>Free SEO audit</span>
+<h3 style="margin: 0; font-size: clamp(24px, 2.6vw, 34px); letter-spacing: -0.03em; font-weight: 600; line-height: 1.1">Short on time? Request your free audit here.</h3>
+</div>
+<p style="margin: 0; flex: 0 1 340px; font-size: 15px; line-height: 1.6; color: #A3A3A3">Three quick fields. Your report lands in your inbox within 48 hours.</p>
+</div>
+<form id="pm-footer-form" action="https://formspree.io/f/xvkkdbln" method="POST" class="pm-lead-form" data-success="pm-footer-success" aria-label="Quick audit request" style="display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 14px">
+<div class="pm-field" style="flex: 1 1 170px; min-width: 0">
+<label class="pm-label" for="pm-f-name">Name</label>
+<input class="pm-input" id="pm-f-name" name="name" type="text" placeholder="Your name" autocomplete="name" required maxlength="100">
+</div>
+<div class="pm-field" style="flex: 1 1 210px; min-width: 0">
+<label class="pm-label" for="pm-f-email">Email</label>
+<input class="pm-input" id="pm-f-email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required maxlength="150">
+</div>
+<div class="pm-field" style="flex: 1 1 210px; min-width: 0">
+<label class="pm-label" for="pm-f-site">Website</label>
+<input class="pm-input" id="pm-f-site" name="website" type="text" placeholder="yourwebsite.com" autocomplete="url" required maxlength="200" inputmode="url">
+</div>
+<button class="pm-btn pm-btn-light pm-submit" type="submit" style="flex: 1 1 180px; justify-content: center; background: #FFFFFF; color: #0A0A0A; font-size: 16px; font-weight: 600; padding: 0 24px; min-height: 52px; display: inline-flex; align-items: center; gap: 10px; border-radius: 999px; border: 0">Get free audit
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></button>
+</div>
+<div aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden">
+<label for="pm-f-company">Company</label>
+<input id="pm-f-company" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+</div>
+<input type="hidden" name="source" value="Footer form">
+<p role="status" aria-live="polite" style="margin: 0; font-size: 15px; line-height: 1.5; color: #FFFFFF"></p>
+<p style="margin: 0; display: flex; align-items: center; gap: 8px; font-size: 13px; color: #8A8A8A"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="9" height="6.5" rx="1.5"></rect><path d="M4.5 6V4.5a2.5 2.5 0 015 0V6"></path></svg>No spam. Your details are only used to send your audit.</p>
+</form>
+<div id="pm-footer-success" tabindex="-1" hidden style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 20px; outline: none">
+<span class="pm-pop" aria-hidden="true" style="width: 48px; height: 48px; flex: 0 0 auto; border-radius: 999px; background: #FFFFFF; color: #0A0A0A; display: flex; align-items: center; justify-content: center">
+<svg width="22" height="22" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path class="pm-draw" d="M6 13.5l4.5 4.5L20 8"></path></svg>
+</span>
+<p style="margin: 0; flex: 1 1 300px; min-width: 0; font-size: 17px; line-height: 1.55; color: #BDBDBD"><strong style="color: #FFFFFF; font-weight: 600">Thanks, <span data-fill="name">there</span>.</strong> Your audit for <strong data-fill="website" style="color: #FFFFFF; font-weight: 600">your site</strong> will be sent to <strong data-fill="email" style="color: #FFFFFF; font-weight: 600; overflow-wrap: anywhere">your inbox</strong> within 48 hours.</p>
+<button data-again class="pm-btn pm-btn-ghost" type="button" style="background: transparent; color: #FFFFFF; font-size: 15px; font-weight: 500; padding: 0 22px; min-height: 48px; display: inline-flex; align-items: center; border-radius: 999px; border: 1px solid #404040">Send another</button>
+</div>
+</div>
+<footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #8A8A8A">
+<span>© 2026 Pranab Mitra</span>
+<span>WordPress Developer &amp; SEO Strategist</span>
+</footer>
+</div>
+</section>
+<a class="pm-float" href="#audit" aria-label="Get a free SEO audit"><span class="pm-pulse pm-pulse-dark" aria-hidden="true"></span>Free SEO audit
+<svg aria-hidden="true" width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></a>
+</div>
+<script>
+(function () {
+  /* Formspree endpoints, one per form */
+  var ENDPOINTS = {
+    'pm-contact-form': 'https://formspree.io/f/moeeynrp', /* main free audit form */
+    'pm-footer-form': 'https://formspree.io/f/xvkkdbln'   /* footer quick form */
+  };
+
+  var root = document.querySelector('.pm-portfolio');
+  if (!root) return;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  var hasIO = 'IntersectionObserver' in window;
+
+  /* ---------- Reveal on scroll ---------- */
+  var reveals = root.querySelectorAll('[data-reveal]');
+  if (!reduce && hasIO) {
+    root.classList.add('pm-js');
+    var groups = new Map();
+    reveals.forEach(function (el) {
+      var parent = el.parentElement;
+      var i = groups.get(parent) || 0;
+      el.style.setProperty('--pm-d', Math.min(i, 6) * 80 + 'ms');
+      groups.set(parent, i + 1);
+    });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('pm-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    reveals.forEach(function (el) { io.observe(el); });
+    /* clear stagger delay after reveal so hovers respond instantly */
+    root.addEventListener('transitionend', function (e) {
+      if (e.target.classList && e.target.classList.contains('pm-in')) e.target.style.setProperty('--pm-d', '0ms');
+    });
+  }
+
+  /* ---------- Count-up numbers ---------- */
+  var counters = root.querySelectorAll('[data-count]');
+  function runCount(el) {
+    var end = parseInt(el.getAttribute('data-count'), 10), start = null, dur = 1200;
+    function tick(t) {
+      if (!start) start = t;
+      var p = Math.min((t - start) / dur, 1);
+      el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  if (!reduce && hasIO) {
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { runCount(entry.target); cio.unobserve(entry.target); }
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(function (el) { el.textContent = '0'; cio.observe(el); });
+  }
+
+  /* ---------- Photo tilt (critically damped spring, interruptible) ---------- */
+  var tilt = root.querySelector('.pm-tilt');
+  var hero = document.getElementById('pm-top');
+  if (tilt && hero && finePointer && !reduce) {
+    var omega = 2 * Math.PI / 0.4; /* response 0.4s, damping 1.0 */
+    var st = { x: 0, y: 0, vx: 0, vy: 0, tx: 0, ty: 0 }, raf = null, last = 0;
+    function step(t) {
+      var dt = Math.min((t - (last || t)) / 1000, 0.032); last = t;
+      ['x', 'y'].forEach(function (k) {
+        var v = 'v' + k, target = st['t' + k];
+        var a = omega * omega * (target - st[k]) - 2 * omega * st[v];
+        st[v] += a * dt; st[k] += st[v] * dt;
+      });
+      tilt.style.transform = 'perspective(900px) rotateX(' + st.y.toFixed(2) + 'deg) rotateY(' + st.x.toFixed(2) + 'deg)';
+      var settled = Math.abs(st.tx - st.x) < 0.01 && Math.abs(st.ty - st.y) < 0.01 && Math.abs(st.vx) < 0.01 && Math.abs(st.vy) < 0.01;
+      raf = settled ? null : requestAnimationFrame(step);
+    }
+    function kick() { if (!raf) { last = 0; raf = requestAnimationFrame(step); } }
+    hero.addEventListener('pointermove', function (e) {
+      var r = tilt.getBoundingClientRect();
+      var nx = (e.clientX - (r.left + r.width / 2)) / (window.innerWidth / 2);
+      var ny = (e.clientY - (r.top + r.height / 2)) / (window.innerHeight / 2);
+      st.tx = Math.max(-1, Math.min(1, nx)) * 7;
+      st.ty = Math.max(-1, Math.min(1, -ny)) * 7;
+      kick();
+    });
+    hero.addEventListener('pointerleave', function () { st.tx = 0; st.ty = 0; kick(); });
+  }
+
+  /* ---------- Scroll progress + floating CTA ---------- */
+  var bar = root.querySelector('.pm-progress');
+  var floatBtn = root.querySelector('.pm-float');
+  var audit = document.getElementById('audit');
+  var contact = document.getElementById('contact');
+  var ticking = false;
+  function inView(el) {
+    if (!el) return false;
+    var r = el.getBoundingClientRect();
+    return r.top < window.innerHeight * 0.85 && r.bottom > window.innerHeight * 0.15;
+  }
+  function onScroll() {
+    ticking = false;
+    var rr = root.getBoundingClientRect();
+    var total = rr.height - window.innerHeight;
+    var p = total > 0 ? Math.min(Math.max(-rr.top / total, 0), 1) : 0;
+    if (bar) bar.style.transform = 'scaleX(' + p.toFixed(4) + ')';
+    if (floatBtn && hero) {
+      var pastHero = hero.getBoundingClientRect().bottom < 0;
+      var show = pastHero && !inView(audit) && !inView(contact);
+      floatBtn.classList.toggle('pm-show', show);
+    }
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(onScroll); }
+  }, { passive: true });
+  window.addEventListener('resize', onScroll);
+  onScroll();
+
+  /* ---------- Mobile menu ---------- */
+  var header = root.querySelector('.pm-nav');
+  var burger = root.querySelector('.pm-burger');
+  var menu = document.getElementById('pm-mobile-menu');
+  var scrim = root.querySelector('.pm-scrim');
+  if (header && burger && menu) {
+    var mq = window.matchMedia('(max-width: 700px)');
+    function setOpen(open, returnFocus) {
+      root.style.setProperty('--pm-hh', header.getBoundingClientRect().bottom + 'px');
+      root.classList.toggle('pm-menu-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      if (open) {
+        var first = menu.querySelector('a');
+        if (first) setTimeout(function () { first.focus({ preventScroll: true }); }, 60);
+      } else if (returnFocus) {
+        burger.focus();
+      }
+    }
+    function isOpen() { return root.classList.contains('pm-menu-open'); }
+    burger.addEventListener('click', function () { setOpen(!isOpen(), false); });
+    if (scrim) scrim.addEventListener('click', function () { setOpen(false, false); });
+    menu.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setOpen(false, false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && isOpen()) setOpen(false, true);
+    });
+    var onMq = function (e) { if (!e.matches && isOpen()) setOpen(false, false); };
+    if (mq.addEventListener) mq.addEventListener('change', onMq); else if (mq.addListener) mq.addListener(onMq);
+  }
+
+  /* ---------- Service "Enquire" buttons pre-select the form option ---------- */
+  root.querySelectorAll('[data-service]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      var want = link.getAttribute('data-service');
+      root.querySelectorAll('#pm-contact-form input[name="goal"]').forEach(function (r) {
+        r.checked = (r.value === want);
+      });
+    });
+  });
+
+  /* ---------- Audit forms (main + footer) ---------- */
+  var fallback = 'Something went wrong. Please email pranabxwork@gmail.com or WhatsApp +91 73195 08538.';
+  root.querySelectorAll('form.pm-lead-form').forEach(function (form) {
+    var statusEl = form.querySelector('[role="status"]');
+    var btn = form.querySelector('button[type="submit"]');
+    var btnHTML = btn.innerHTML;
+    var success = document.getElementById(form.getAttribute('data-success'));
+    var endpoint = ENDPOINTS[form.id] || form.getAttribute('action') || '';
+    var connected = /^https:\/\/(formspree\.io\/f\/[A-Za-z0-9]+$|script\.google\.com\/)/.test(endpoint);
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (form.elements._gotcha && form.elements._gotcha.value) return; /* spam bot */
+      if (!connected) {
+        statusEl.textContent = 'The form is not connected yet. Please email pranabxwork@gmail.com.';
+        return;
+      }
+      var data = new URLSearchParams(new FormData(form));
+      data.append('page', window.location.href);
+      var values = {
+        name: ((form.elements.name && form.elements.name.value) || '').trim().split(' ')[0] || 'there',
+        website: ((form.elements.website && form.elements.website.value) || '').trim() || 'your site',
+        email: ((form.elements.email && form.elements.email.value) || '').trim() || 'your inbox'
+      };
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      statusEl.textContent = '';
+
+      data.append('_subject', 'Free audit request: ' + (values.website === 'your site' ? 'portfolio' : values.website) + ' (' + ((form.elements.name && form.elements.name.value) || '').trim() + ')');
+
+      fetch(endpoint, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } })
+        .then(function (r) { return r.json().then(function (res) { return { httpOk: r.ok, res: res }; }); })
+        .then(function (out) {
+          var res = out.res;
+          if (!out.httpOk || !res || res.ok !== true) {
+            /* Show Formspree's own error messages, e.g. "Email should be an email" */
+            var msgs = (res && res.errors || []).map(function (er) {
+              var field = er.field ? er.field.charAt(0).toUpperCase() + er.field.slice(1) + ' ' : '';
+              return field + (er.message || '');
+            }).filter(Boolean);
+            var err = new Error('failed'); err.userMessage = msgs.length ? msgs.join('. ') + '.' : '';
+            throw err;
+          }
+          if (success) {
+            success.querySelectorAll('[data-fill]').forEach(function (el) {
+              el.textContent = values[el.getAttribute('data-fill')];
+            });
+            form.reset();
+            form.hidden = true;
+            success.hidden = false;
+            success.querySelectorAll('.pm-pop, .pm-draw').forEach(function (el) {
+              el.style.animation = 'none'; void el.offsetWidth; el.style.animation = '';
+            });
+            success.focus();
+          }
+        })
+        .catch(function (err) { statusEl.textContent = (err && err.userMessage) ? err.userMessage : fallback; })
+        .then(function () { btn.disabled = false; btn.innerHTML = btnHTML; });
+    });
+
+    var again = success && success.querySelector('[data-again]');
+    if (again) again.addEventListener('click', function () {
+      success.hidden = true;
+      form.hidden = false;
+      var firstInput = form.querySelector('.pm-input');
+      if (firstInput) firstInput.focus();
+    });
+  });
+})();
+</script>
+</body>
+</html>
